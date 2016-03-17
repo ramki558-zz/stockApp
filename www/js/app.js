@@ -1,5 +1,7 @@
 angular.module('stockApp', [
   'ionic',
+  'nvd3',
+  'nvChart',
   'stockApp.controllers',
   'stockApp.services',
   'stockApp.filters',
@@ -51,8 +53,8 @@ angular.module('stockApp', [
         controller: 'StockCtrl'
       }
     }
-  })
-  ;
+  });
+  
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/my-stocks');
 });
